@@ -99,6 +99,12 @@ define "Date Value":
 define "DateTime Value":
   @2021-03-01T14:30:14.5
 
+define "DateTime Value With UTC Offset":
+  @2021-03-01T14:30:14.5Z
+
+define "DateTime Value With Timezone Offset":
+  @2021-03-01T14:30:14.5-07:00
+
 define "Time Value (at midnight)":
   @T12:00:00.0
 
