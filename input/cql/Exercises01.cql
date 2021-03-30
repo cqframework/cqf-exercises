@@ -42,3 +42,9 @@ define "Reference Expression":
 
 define "String Concatenation":
   1 + 'John'
+
+define "Warning Message":
+  Message(1, true, '123', 'Warning', 'This is a warning message')
+
+define "Nested Warning Message":
+  1 + Message(2, true, '123', 'Warning', 'The value is 2')

@@ -40,13 +40,18 @@ define "String Equivalence With Null":
 
 // # Equality vs Equivalence
 
-define T: { X: 1, Y: null }
+define T1: { X: 1, Y: null }
+define T2: { X: 1, Y: null }
+define T3: { X: 1, Y: 2 }
 
 define TEqual:
-  (T = T) is _____
+  (T1 = T2) is _____
+
+define TEqualWithNull:
+  (T2 = T3) is _____
 
 define TEquivalent:
-  (T ~ T) is _____
+  (T2 ~ T3) is _____
 
 define C1:
   Code {
@@ -149,10 +154,14 @@ define "Natural Logarithm":
 define "Exponent":
   (Exp(2.30258509288405) = 10) is _____
 
+/*
+For the remaining definitions, modify each expression so that it returns true, if it doesn't already
+*/
+
 // # String Manipulation
 
 define "String Concatenate":
-   'AB' + 'CD' = 'ABCD'
+   'AB' + 'CD'
 
 define "String Concatenate With Nulls":
   'AB' + null
@@ -266,6 +275,10 @@ define "Difference In Months Between":
   difference in months between @2014-01-31 and @2014-02-01
 
 // # Conditionals
+
+/*
+The definitions in this sections are examples, not exercises, no need to modify them to return true
+*/
 
 define strength:
   10.0 'mg/mL'
