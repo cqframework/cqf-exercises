@@ -1,0 +1,16 @@
+{
+   "options":[
+      "EnableLocators",
+      "DisableListDemotion",
+      "DisableListPromotion"
+
+],
+   "formats":[
+     "XML",
+     "JXSON"
+   ],
+   "validateUnits":true,
+   "verifyOnly":false,
+   "errorLevel":"Info",
+   "signatureLevel":"None"
+}
