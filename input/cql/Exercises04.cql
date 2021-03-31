@@ -11,7 +11,7 @@ Lists of Strings
 Lists of Lists
 Lists of Intervals
 
-Modify Each Expression so that it returns True
+Modify Each Expression so that it returns True, if it doesn't already
 */
 library Exercises04
 
@@ -40,6 +40,9 @@ define "End of Interval":
 
 define "Width of Interval":
   width of Interval[3, 5)
+
+define "Size of Interval":
+  Size(Interval[3, 5))
 
 define "Interval Equality":
   Interval[3, 5) = Interval[3, 4]
@@ -239,3 +242,11 @@ define "Flatten Lists and Elements":
 
 define "Collapse Expression":
   collapse { Interval[1, 6], Interval[3, 7], Interval[9, 12] }
+
+define "Expand Expression":
+  expand { Interval[1, 7], Interval[9, 12] }
+
+// This overload of expand was introduced STU in 1.5 and is
+// not yet implemented in the Java-based CQL engine
+//define "Expand Interval Expression":
+//  expand Interval[1, 10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }

@@ -9,3 +9,55 @@ Retrieve w/ ValueSet
 Retrieve w/ SearchPath
 */
 library Exercises06
+
+using FHIR version '4.0.1'
+
+include FHIRHelpers version '4.0.1'
+
+codesystem "ActCode": 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
+codesystem "MedicationRequestCategory": 'http://terminology.hl7.org/CodeSystem/medicationrequest-category'
+codesystem "ObservationCategory": 'http://terminology.hl7.org/CodeSystem/observation-category'
+
+valueset "Community Medication": 'http://example.org/fhir/ValueSet/community-medication'
+valueset "Vital Sign": 'http://example.org/fhir/ValueSet/vital-sign'
+valueset "Laboratory": 'http://example.org/fhir/ValueSet/laboratory'
+
+// Act Codes
+code "Inpatient Encounter": 'IMP' from "ActCode" display 'Inpatient Encounter'
+
+context Patient
+
+/*
+Write a definition to retrieve Encounters
+Use the FHIR [Encounter](http://hl7.org/fhir/encounter.html)
+*/
+
+/*
+Write a definition to retrieve Inpatient Encounters
+Use the FHIR [Encounter](http://hl7.org/fhir/encounter.html)
+*/
+
+/*
+Write a definition to retrieve Medication Requests
+Use the FHIR [MedicationRequest](http://hl7.org/fhir/medicationrequest.html)
+*/
+
+/*
+Write a definition to retrieve Community Medication Requests
+Use the FHIR [MedicationRequest](http://hl7.org/fhir/medicationrequest.html)
+*/
+
+/*
+Write a definition to retrieve all Observations
+Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
+*/
+
+/*
+Write a definition to retrieve all vital signs
+Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
+*/
+
+/*
+Write a definition to retrieve all laboratory results
+Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
+*/
