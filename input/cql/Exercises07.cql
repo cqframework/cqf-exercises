@@ -32,6 +32,10 @@ code "Inpatient Encounter": 'IMP' from "ActCode" display 'Inpatient Encounter'
 Write a query to return only Laboratory results that are final or
 amended and have a quantitative result
 */
+define "Final or Amended Labratory Results":
+  [Observation: category in "Laboratory"] O
+    where O.status in { 'final', 'amended' }
+      and O.value is Quantity
 
 /*
 Write a query to return encounters that have a quantitative laboratory result

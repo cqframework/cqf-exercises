@@ -25,10 +25,14 @@ code "Blood Glucose": '2339-0' from "LOINC" display 'Glucose Bld-mCnc'
 code "Inpatient Encounter": 'IMP' from "ActCode" display 'Inpatient Encounter'
 
 /*
+Write a query to return the greatest absolute difference between any pair of blood glucose results
+*/
+
+/*
 Write a query to return the difference between pairs of quantitative results
 for the same test
 */
 
 /*
-Write a query to return the average quantiative result for the same test
+Write a query to return the average quantitative result for the same test
 */

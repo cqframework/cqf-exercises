@@ -31,33 +31,47 @@ context Patient
 Write a definition to retrieve Encounters
 Use the FHIR [Encounter](http://hl7.org/fhir/encounter.html)
 */
+define "Encounters":
+  [Encounter]
 
 /*
 Write a definition to retrieve Inpatient Encounters
 Use the FHIR [Encounter](http://hl7.org/fhir/encounter.html)
 */
+define "Inpatient Encounters":
+  [Encounter: class ~ "Inpatient Encounter"]
 
 /*
 Write a definition to retrieve Medication Requests
 Use the FHIR [MedicationRequest](http://hl7.org/fhir/medicationrequest.html)
 */
+define "Medication Requests":
+  [MedicationRequest]
 
 /*
 Write a definition to retrieve Community Medication Requests
 Use the FHIR [MedicationRequest](http://hl7.org/fhir/medicationrequest.html)
 */
+define "Community Medication Requests":
+  [MedicationRequest: category in "Community Medication"]
 
 /*
 Write a definition to retrieve all Observations
 Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
 */
+define "Observations":
+  [Observation]
 
 /*
 Write a definition to retrieve all vital signs
 Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
 */
+define "Vital Signs":
+  [Observation: category in "Vital Sign"]
 
 /*
 Write a definition to retrieve all laboratory results
 Use the FHIR [Observation](http://hl7.org/fhir/observation.html)
 */
+define "Laboratory Results":
+  [Observation: category in "Laboratory"]

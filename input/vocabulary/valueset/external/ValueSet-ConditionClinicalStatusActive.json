@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "conditionclinical",
+  "id": "conditionclinicalstatusactive",
   "meta": {
     "versionId": "1",
     "lastUpdated": "2020-03-21T14:03:35.733-06:00",
@@ -27,7 +27,7 @@
       "valueInteger": 3
     }
   ],
-  "url": "http://utah.edu/fhir/lcs-cds/ValueSet/conditionclinical",
+  "url": "http://example.org/fhir/ValueSet/conditionclinicalstatusactive",
   "identifier": [
     {
       "system": "urn:ietf:rfc:3986",
@@ -35,23 +35,13 @@
     }
   ],
   "version": "4.0.1",
-  "name": "ConditionClinical",
-  "title": "Condition Clinical Status",
+  "name": "ConditionClinicalStatusActive",
+  "title": "Condition Clinical Status Active",
   "status": "draft",
-  "experimental": false,
+  "experimental": true,
   "date": "2020-03-21T00:00:00+00:00",
-  "publisher": "FHIR Project team",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://hl7.org/fhir"
-        }
-      ]
-    }
-  ],
-  "description": "Preferred value set for Condition Clinical Status.",
+  "publisher": "ACME",
+  "description": "Active Condition Clinical Status Codes.",
   "immutable": true,
   "compose": {
     "include": [
