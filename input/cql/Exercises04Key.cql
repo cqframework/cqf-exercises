@@ -235,7 +235,7 @@ define "Distinct Expression":
 
 define "Flatten Not Recursive":
   ({ { 1, 2, 3 }, { { 'a', 'b' }, { 'x', 'y' } } })
-    = { 1, 2, 3, { 'a', 'b' }, 'x', 'y' }
+    = { 1, 2, 3, { 'a', 'b' }, { 'x', 'y' } }
 
 define "Flatten Lists and Elements":
   ({ { 1, 2, 3 }, 2, 3, 4 }) = { 1, 2, 3, 2, 3, 4 }
