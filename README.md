@@ -11,15 +11,15 @@ The exercises in this repository can be worked [locally](#local-setup), or [remo
 The exercises in this repository can be worked using the [codespaces](https://github.com/features/codespaces) feature of Github to allow participants a completely browser-based experience:
 
 1. Find your Github.com userId (if you don't have one, you can signup [here](https://github.com/signup))
-2. Send you Github.com userId to <bryn@alphora.com> so the speaker can add you as an outside collaborator to the Alphora organization
+2. Send your Github.com userId to <bryn@alphora.com> so the speaker can add you as an outside collaborator to the Alphora organization
 3. Navigate to the https://github.com/alphora/cqf-exercises repository
-4. Open the repository in a Codespace using the green Code button dropdown
+4. Open the repository in a Codespace using the green Code button dropdown (a 4-core machine should be plenty for this)
 
 Note that the first time you open the Codespace will take quite a while, so give it time to initialize.
 
-While the Codespace is initializing, there is an option to open the container locally. DO NOT SELECT THIS OPTION unless you have VSCode installed locally. Continue to wait for the Codespace to initialize.
+While the Codespace is initializing, there is an option to open the container in VS Code Desktop. DO NOT SELECT THIS OPTION unless you have VS Code installed locally. Continue to wait for the Codespace to initialize.
 
-Once the Codespace is open, you will be in a VSCode with the contents of this repository open in the File Explorer and can view the exercises in the [input/cql](input/cql) folder.
+Once the Codespace is open, you will be in a VS Code with the contents of this repository open in the File Explorer and can view the exercises in the [input/cql](input/cql) folder.
 
 ### Local Setup
 
