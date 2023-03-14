@@ -24,11 +24,12 @@ RUN sudo apt install yarn
 RUN apt-get update && apt-get -y install python3 python3-pip gosu openssl wget graphviz
 RUN pip3 install --upgrade  requests zulip
 
-ENV PATH="/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:${PATH}"
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB && \
-    curl -L get.rvm.io | bash -s stable  && \
-    rvm install 2.5.1 && \
-    gem install jekyll jekyll-asciidoc
+# [Optional] Uncommet this section to install ruby and jekyll support (only required for publisher builds)
+# ENV PATH="/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:${PATH}"
+# RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB && \
+#    curl -L get.rvm.io | bash -s stable  && \
+#    rvm install 2.5.1 && \
+#    gem install jekyll jekyll-asciidoc
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
