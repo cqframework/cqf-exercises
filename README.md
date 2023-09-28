@@ -33,6 +33,8 @@ This link is also available from the `Code` button at the top of the repository 
 
 Once you have cloned the repository locally, open the repository in VSCode at the root of the repository. In the file explorer in the IDE, navigate to the `input/cql` folder and open any of the exercises. Once you're in a CQL editor, you should see syntax highlighting and error reporting, and you can also execute the CQL by right-clicking and selectin `CQL | Execute` from the popup menu, or simply by pressing `F5`.
 
+There are files, ig.ini and cqf-exercises.xml, that are included in this repository to satisfy a requirement in the vscode-cql plugin that have nothing to do with the exercises in this repository. They can safely be ignored. They are part of the IG process. 
+
 For more information on the VSCode CQL plugin, refer to the [Using CQL Support in Atom](https://github.com/cqframework/atom_cql_support#using-the-cql-support-in-atom) topic in the Atom CQL Support readme.
 
 ## Exercises
