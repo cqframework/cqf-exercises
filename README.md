@@ -21,7 +21,7 @@ Once the Codespace is open, you will be in a VS Code with the contents of this r
 
 ### Local Setup
 
-These exercises can be worked locally with the [VS Code Plugin](https://github.com/cqframework/vscode-cql). If you do not have Atom and CQL Atom Plugin installed, follow the [Quick Start](https://github.com/cqframework/vscode-cql#quick-start) instructions.
+These exercises can be worked locally with the [VS Code Plugin](https://github.com/cqframework/vscode-cql). If you do not have VSCode and the CQFramework CQL Plugin installed, follow the [Quick Start](https://github.com/cqframework/vscode-cql#quick-start) instructions.
 
 Once you have VSCode installed, the exercises can be downloaded locally (i.e. _cloning_ this repository to your local drive). To do this from within VSCode, follow the instructions for [Cloning a repository](https://code.visualstudio.com/docs/sourcecontrol/github#_cloning-a-repository). When you get to the dialog asking for the repository to clone, provide this link:
 
@@ -35,7 +35,7 @@ Once you have cloned the repository locally, open the repository in VSCode at th
 
 There are files, ig.ini and cqf-exercises.xml, that are included in this repository to satisfy a requirement in the vscode-cql plugin that have nothing to do with the exercises in this repository. They can safely be ignored. They are part of the IG process. 
 
-For more information on the VSCode CQL plugin, refer to the [Using CQL Support in Atom](https://github.com/cqframework/atom_cql_support#using-the-cql-support-in-atom) topic in the Atom CQL Support readme.
+For more information on the VSCode CQL plugin, refer to the [CQFramework VSCode CQL Plugin User Guide](https://github.com/cqframework/vscode-cql/wiki/User-Guide).
 
 ## Exercises
 
