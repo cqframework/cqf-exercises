@@ -18,30 +18,30 @@ library Exercises01
 /*
 // This is a comment
 // Whitespace is all the "invisibles" (spaces, tabs, returns)
-DEFINE "This is a quoted identifier:
+Define "This is a quoted identifier:
   @20210329 + 3 days
 
-define 1MoreIdentifier:
-  .0 'g'
+define _1MoreIdentifier:
+  0.0 'g'
 
 // # Syntax Errors
 
 define "Inequality Expression"
-  4 <> 5
+  4 != 5
 
 define "Relative Comparison Expression":
-  4 < = 5
+  4 <= 5
 
 define "Quantity Expression":
-  5 g/dL
+  5 'g/dL'
 
 // # Semantic Errors
 
 define "Reference Expression":
-  "quantity expression"
+  "Quantity Expression"
 
 define "String Concatenation":
-  1 + 'John'
+  (1) + 'John'
 
 define "Warning Message":
   Message(1, true, '123', 'Warning', 'This is a warning message')
