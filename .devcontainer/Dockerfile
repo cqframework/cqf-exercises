@@ -24,7 +24,7 @@ RUN sudo apt update
 RUN sudo apt install yarn
 
 RUN apt-get update && apt-get -y install python3 python3-pip gosu openssl wget graphviz
-RUN pip3 install --upgrade  requests zulip
+# RUN pip3 install --upgrade  requests zulip
 
 # [Optional] Uncommet this section to install ruby and jekyll support (only required for publisher builds)
 # ENV PATH="/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:${PATH}"
