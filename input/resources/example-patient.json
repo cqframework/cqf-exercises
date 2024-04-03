@@ -1,18 +1,16 @@
 {
   "resourceType": "Patient",
-  "id": "example",
+  "id": "example-patient",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient.html"
     ]
   },
   "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>meta</b>: </p><p><b>identifier</b>: Medical record number = 12345 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Peter James Chalmers (OFFICIAL), Jim Chalmers , Peter James Windsor (MAIDEN)</p><p><b>telecom</b>: ph: (03) 5555 6473(WORK), ph: (03) 3410 5613(MOBILE), ph: (03) 5555 8834(OLD)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p><p><b>deceased</b>: false</p><p><b>address</b>: 534 Erewhon St PeasantVille, Utah 84414(HOME)</p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td><td><b>Gender</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>Next-of-Kin <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin)</span></td><td>Bénédicte du Marché </td><td>ph: +33 (237) 998327</td><td>534 Erewhon St PleasantVille VT 3999 (HOME)</td><td>female</td><td>Jan 1, 2012 12:00:00 AM --&gt; (ongoing)</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-example.html\">Generated Summary: id: example; ??; active; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/organization-type team}\">Organizational team</span>; name: Health Level Seven International; ph: (+1) 734-677-7777, fax: (+1) 734-677-6622, hq@HL7.org</a></p></div>"
-  },
+    "status": "generated"  },
   "extension": [
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race.html",
       "extension" : [
         {
           "url" : "ombCategory",
@@ -69,7 +67,7 @@
       ]
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity.html",
       "extension" : [
         {
           "url" : "ombCategory",
@@ -102,7 +100,7 @@
       ]
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex.html",
       "valueCode" : "M"
     }
   ],
@@ -267,6 +265,6 @@
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/example"
+    "reference": "Organization/Organization-example"
   }
 }

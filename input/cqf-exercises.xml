@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "mycontentig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="example.fhir.uv.mycontentig"/>
+  <id value="fhir.cqf.typesandvalues"/>
   <url value="http://fhir.org/guides/cqf/typesandvalues/ImplementationGuide/fhir.cqf.typesandvalues"/>
   <version value="0.1.0"/>
   <name value="CQLExercises"/>
@@ -33,15 +33,31 @@
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
-    <!--
+    
     <resource>
       <reference>
-        <reference value="Library/dependency-example"/>
+        <reference value="Observation/example-observation"/>
       </reference>
-      <name value="Dependency library example"/>
-      <description value="A simple example showing use of a dependency library from an implementation guide dependency"/>
+      <name value="Observation Blood Pressure"/>
+      <description value="Observation Example "/>
     </resource>
-    -->
+
+     <resource>
+      <reference>
+        <reference value="Patient/example-patient"/>
+      </reference>
+      <name value="Patient"/>
+      <description value="Patient Example"/>
+    </resource>
+
+     <resource>
+      <reference>
+        <reference value="Organization/Organization-example"/>
+      </reference>
+      <name value="Observation"/>
+      <description value="Observation Example"/>
+    </resource>
+    
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
