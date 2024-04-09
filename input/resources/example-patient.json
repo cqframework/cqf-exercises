@@ -3,14 +3,14 @@
   "id": "example-patient",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient.html"
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-patient"
     ]
   },
   "text": {
     "status": "generated"  },
   "extension": [
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race.html",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
       "extension" : [
         {
           "url" : "ombCategory",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity.html",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
       "extension" : [
         {
           "url" : "ombCategory",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex.html",
+      "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
       "valueCode" : "M"
     }
   ],

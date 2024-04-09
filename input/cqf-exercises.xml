@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "mycontentig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
-  <id value="fhir.cqf.typesandvalues"/>
-  <url value="http://fhir.org/guides/cqf/typesandvalues/ImplementationGuide/fhir.cqf.typesandvalues"/>
+  <id value="fhir.cqf.cqf-exercises"/>
+  <url value="http://fhir.org/guides/cqf/exercises/ImplementationGuide/fhir.cqf.cqf-exercises"/>
   <version value="0.1.0"/>
   <name value="CQLExercises"/>
   <title value="CQLExercises"/>
@@ -29,6 +29,16 @@
     <uri value="http://fhir.org/guides/cqf/common/ImplementationGuide/fhir.cqf.common"/>
     <packageId value="fhir.cqf.common"/>
     <version value="4.0.1"/>
+  </dependsOn>
+  <dependsOn id="uscore">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore/ImplementationGuide/hl7.fhir.us.qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="6.0.0"/>
   </dependsOn>
   <definition>
     <!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
