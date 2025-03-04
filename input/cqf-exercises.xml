@@ -23,7 +23,7 @@
     </coding>
   </jurisdiction>
   <packageId value="fhir.cqf.cqf-exercises"/>
-  <license value="Apache-2.0"/>
+  <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="cqf">
     <uri value="http://fhir.org/guides/cqf/common/ImplementationGuide/fhir.cqf.common"/>
