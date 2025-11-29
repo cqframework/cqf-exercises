@@ -1,0 +1,6 @@
+CQL: /workspaces/cqf-exercises/input/cql
+Terminology: /workspaces/cqf-exercises/input/vocabulary/valueset
+No data found at /workspaces/cqf-exercises/input/tests. Evaluation may fail if data is required.
+CQL: /workspaces/cqf-exercises/input/cql
+Terminology: /workspaces/cqf-exercises/input/vocabulary/valueset
+No data found at /workspaces/cqf-exercises/input/tests. Evaluation may fail if data is required.

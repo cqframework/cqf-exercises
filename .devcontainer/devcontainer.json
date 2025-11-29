@@ -1,15 +1,15 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/java
+// For format details, see https://containers.dev/ For config options, see the README at:
+// https://github.com/devcontainers/templates/tree/main/src/java
 {
 	"name": "Java",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			// Update the VARIANT arg to pick a Java version: 11, 16
-			"VARIANT": "11",
+			// Update the VARIANT arg to pick a Java version: 11, 16, 17
+			"VARIANT": "17",
 			"INSTALL_MAVEN": "false",
 			"INSTALL_GRADLE": "false",
-			"NODE_VERSION": "12"
+			"NODE_VERSION": "20"
 		}
 	},
 
@@ -21,7 +21,7 @@
 				"java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current",
 				"java.configuration.runtimes": [{
 					"default": true,
-					"name": "JavaSE-11",
+					"name": "JavaSE-17",
 					"path": "/usr/local/sdkman/candidates/java/current"
 				}]
 			},
@@ -29,8 +29,7 @@
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"vscjava.vscode-java-pack",
-				"cqframework.cql",
-				"ritwickdey.liveserver"
+				"cqframework.cql"
 			]
 		}
 	},

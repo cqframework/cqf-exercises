@@ -1,7 +1,7 @@
 # See here for image contents: https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/java-8/.devcontainer/base.Dockerfile
 
-ARG VARIANT=11
-FROM mcr.microsoft.com/vscode/devcontainers/java:${VARIANT}
+ARG VARIANT=17
+FROM mcr.microsoft.com/devcontainers/java:${VARIANT}
 
 # [Option] Install Maven
 ARG INSTALL_MAVEN="false"
@@ -16,15 +16,10 @@ RUN if [ "${INSTALL_MAVEN}" = "true" ]; then su vscode -c "umask 0002 && . /usr/
 ARG NODE_VERSION="lts/*"
 RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/local/share/nvm/nvm.sh && nvm install ${NODE_VERSION} 2>&1"; fi
 
-# These commands were added to address an expired key issue based on the suggestions in this thread: https://github.com/yarnpkg/yarn/issues/7866
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-RUN sudo apt update
-RUN sudo apt install yarn
-
-RUN apt-get update && apt-get -y install python3 python3-pip gosu openssl wget graphviz
-# RUN pip3 install --upgrade  requests zulip
+# Install dependencies, clean up, and set up non-root user
+RUN apt-get update && apt-get -y install curl git openssl wget graphviz ruby ruby-dev build-essential libffi-dev && \
+    apt-get clean && \
+    gem install jekyll
 
 # [Optional] Uncommet this section to install ruby and jekyll support (only required for publisher builds)
 # ENV PATH="/usr/local/rvm/bin:/usr/local/rvm/rubies/ruby-2.5.1/bin:${PATH}"
