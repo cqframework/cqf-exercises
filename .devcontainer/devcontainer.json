@@ -13,23 +13,27 @@
 		}
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {
-		"java.home": "/docker-java-home",
-		"java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current",
-		"java.configuration.runtimes": [{
-			"default": true,
-			"name": "JavaSE-11",
-			"path": "/usr/local/sdkman/candidates/java/current"
-		}]
+	"customizations": {
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"java.home": "/docker-java-home",
+				"java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/current",
+				"java.configuration.runtimes": [{
+					"default": true,
+					"name": "JavaSE-11",
+					"path": "/usr/local/sdkman/candidates/java/current"
+				}]
+			},
+			
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"vscjava.vscode-java-pack",
+				"cqframework.cql",
+				"ritwickdey.liveserver"
+			]
+		}
 	},
-	
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"vscjava.vscode-java-pack",
-		"cqframework.cql",
-		"ritwickdey.liveserver"
-	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [ 3000 ],
